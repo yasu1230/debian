@@ -90,4 +90,20 @@ nginx-light_1.10.1-1~dotdeb+8.2_amd64.deb
 nginx_1.10.1-1~dotdeb+8.2_all.deb
 ```
 
+パッケージをアップデートから除外する
+
+```
+echo libnginx-mod-http-auth-pam hold | dpkg --set-selections
+echo libnginx-mod-http-geoip hold | dpkg --set-selections
+echo libnginx-mod-http-image-filter hold | dpkg --set-selections
+echo libnginx-mod-http-lua hold | dpkg --set-selections
+echo libnginx-mod-http-ndk hold | dpkg --set-selections
+echo libnginx-mod-http-perl hold | dpkg --set-selections
+echo libnginx-mod-http-xslt-filter hold | dpkg --set-selections
+echo libnginx-mod-mail hold | dpkg --set-selections
+echo libnginx-mod-stream hold | dpkg --set-selections
+echo nginx-common hold | dpkg --set-selections
+echo nginx-extras hold | dpkg --set-selections
+```
+
 
